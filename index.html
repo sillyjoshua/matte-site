@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matte — a sleek browser with a Silver Gate soul</title>
+  <meta name="description" content="Matte is a sleek, privacy-respecting desktop browser with the Silver Gate UI, a built-in Jarvis command bar, themes, custom CSS and automatic updates." />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#9aa7ff"/><stop offset="1" stop-color="#5b6ee8"/>
+            </linearGradient>
+          </defs>
+          <circle cx="12" cy="12" r="10" fill="none" stroke="url(#g1)" stroke-width="2.4"/>
+          <path d="M12 4a8 8 0 0 1 0 16" fill="url(#g1)"/>
+        </svg>
+        MATTE
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#jarvis">Jarvis</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/sillyjoshua/matte" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <a class="btn btn-primary nav-cta" href="#download">Download</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <span class="badge">◈ Silver Gate · v1.2.1</span>
+    <h1>A browser with a<br><span class="grad">Silver Gate soul.</span></h1>
+    <p class="sub">
+      Matte is a sleek, privacy-respecting desktop browser. Talk to it with Jarvis,
+      theme it however you feel, and let it update itself — no accounts, no telemetry, no nonsense.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary btn-lg" href="https://github.com/sillyjoshua/matte/releases/latest" target="_blank" rel="noopener">
+        Download for Windows
+      </a>
+      <a class="btn btn-lg" href="https://github.com/sillyjoshua/matte#readme" target="_blank" rel="noopener">
+        Build from source
+      </a>
+    </div>
+    <p class="micro">Free & open source · Windows · ~100 MB installer</p>
+
+    <!-- Fake browser mockup -->
+    <div class="mockup">
+      <div class="mock-top">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <div class="mock-tabs"><span class="mock-tab active">◈ New Tab</span><span class="mock-tab">Silver Gate</span></div>
+        <div class="mock-url">jarvis go to youtube</div>
+      </div>
+      <div class="mock-body">
+        <p class="jarvis-reply">◈ JARVIS — Navigating to <b>youtube.com</b>…</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="section">
+    <h2>Everything you need. <span class="grad">Nothing you don't.</span></h2>
+    <div class="grid">
+      <div class="card"><span class="ic">🎨</span><h3>Silver Gate UI</h3><p>A dark, glassy interface with pill tabs, a glowing omnibox and buttery animations. Four built-in themes.</p></div>
+      <div class="card"><span class="ic">🧠</span><h3>Jarvis</h3><p>Type <code>jarvis go to github</code> and you're there. Local commands are instant; connect your own AI key for the rest.</p></div>
+      <div class="card"><span class="ic">🗂</span><h3>Real multi-tab</h3><p>Rounded pill tabs with loading dots, middle-click close, Ctrl+T / Ctrl+W / Ctrl+Tab — all the muscle memory works.</p></div>
+      <div class="card"><span class="ic">🔒</span><h3>Private by design</h3><p>Context isolation, no node in pages, no telemetry, no accounts. Your keys and settings stay on your device.</p></div>
+      <div class="card"><span class="ic">✨</span><h3>Custom CSS</h3><p>A built-in editor to restyle the entire browser. If you can write CSS, you can make Matte yours.</p></div>
+      <div class="card"><span class="ic">🚀</span><h3>Self-updating</h3><p>Matte checks GitHub for new releases and tells you when it's time — one click to the installer.</p></div>
+    </div>
+  </section>
+
+  <section id="jarvis" class="section jarvis-section">
+    <h2>Say it. <span class="grad">Matte does it.</span></h2>
+    <p class="sub">Jarvis lives in the address bar. No plugins, no setup required for everyday commands.</p>
+    <div class="terminal">
+      <div class="t-row"><span class="prompt">›</span> jarvis go to google</div>
+      <div class="t-out">→ Navigating to google.com</div>
+      <div class="t-row"><span class="prompt">›</span> jarvis search best browsers 2026</div>
+      <div class="t-out">→ Searching Google for "best browsers 2026"</div>
+      <div class="t-row"><span class="prompt">›</span> jarvis open youtube</div>
+      <div class="t-out">→ Navigating to youtube.com</div>
+    </div>
+  </section>
+
+  <section id="download" class="section download-section">
+    <h2>Ready when <span class="grad">you are.</span></h2>
+    <p class="sub">Grab the installer, or clone the source and build it yourself in three commands.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary btn-lg" href="https://github.com/sillyjoshua/matte/releases/latest" target="_blank" rel="noopener">Download Matte</a>
+      <a class="btn btn-lg" href="https://github.com/sillyjoshua/matte#option-2--install-with-git-from-source" target="_blank" rel="noopener">Git tutorial</a>
+    </div>
+    <div class="terminal small">
+      <div class="t-row"><span class="prompt">$</span> git clone https://github.com/sillyjoshua/matte.git</div>
+      <div class="t-row"><span class="prompt">$</span> cd matte && npm install</div>
+      <div class="t-row"><span class="prompt">$</span> npm start</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><b>MATTE</b> — Silver Gate · built with Electron · MIT License</p>
+    <p><a href="https://github.com/sillyjoshua/matte" target="_blank" rel="noopener">GitHub</a> · <a href="https://github.com/sillyjoshua/matte/releases" target="_blank" rel="noopener">Releases</a> · <a href="https://github.com/sillyjoshua/matte#readme" target="_blank" rel="noopener">Docs</a></p>
+  </footer>
+</body>
+</html>
