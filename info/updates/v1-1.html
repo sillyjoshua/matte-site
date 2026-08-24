@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matte V1.1 — Silver Gate · Updates</title>
+  <link rel="icon" type="image/png" href="../../icon.png" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+  <div class="glow glow-1"></div><div class="glow glow-2"></div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="../../">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9aa7ff"/><stop offset="1" stop-color="#5b6ee8"/></linearGradient></defs>
+          <circle cx="12" cy="12" r="10" fill="none" stroke="url(#g1)" stroke-width="2.4"/>
+          <path d="M12 4a8 8 0 0 1 0 16" fill="url(#g1)"/>
+        </svg>
+        MATTE
+      </a>
+      <div class="nav-links">
+        <a href="../updates/">Updates</a>
+        <a href="https://github.com/sillyjoshua/matte" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <a class="btn btn-primary nav-cta" href="../../#download">Download</a>
+    </div>
+  </nav>
+
+  <section class="section article" style="max-width: 760px;">
+    <a class="back" href="index.html">← All updates</a>
+    <span class="badge">◈ FEATURE RELEASE</span>
+    <h1 style="font-size: clamp(34px, 5vw, 52px); margin-top: 18px;">Matte V1.1 — Silver Gate</h1>
+    <p class="meta">TAG: matte-v1.1-silvergate · THE BRAIN UPDATE</p>
+
+    <h2>Matte learns to take care of itself</h2>
+    <p>If V1.0 gave Matte its face, V1.1 gave it a brain. This release added a full Settings panel, deep customization, and the ability to update itself — turning a promising browser into one you could actually live in.</p>
+
+    <h2>What shipped</h2>
+    <ul>
+      <li><b>Settings panel</b> — a glassy overlay with everything in one place</li>
+      <li><b>Four themes</b> — Silver Gate, Midnight, Nord and Light Gate, saved across restarts</li>
+      <li><b>Custom CSS</b> — a built-in editor to restyle the entire browser interface, persisted locally</li>
+      <li><b>URL launching</b> — run <b>Matte.exe https://anysite.com</b> to open straight onto a site</li>
+      <li><b>Automatic update checks</b> — Matte queries GitHub releases on startup and shows a banner when a new version exists, with the version read straight from the installer filename</li>
+      <li><b>Google as the default search engine</b>, with the smart omnibox</li>
+      <li>Install options for everyone: the .exe installer, or a full Git-from-source tutorial in the README</li>
+    </ul>
+
+    <h2>Growing pains, handled</h2>
+    <p>V1.1 also had its share of iteration: a settings overlay that refused to stay hidden (a one-line CSS lesson about the <b>hidden</b> attribute vs <b>display</b>) was squashed, and the update checker was made smarter by reading versions from the installer asset instead of release tags.</p>
+
+    <h2>Why it mattered</h2>
+    <p>V1.1 made Matte <b>yours</b> — your theme, your CSS, your keybindings of habit — and made sure it could keep itself fresh. The self-update system built here is the same one that will notify every user the moment V2 lands.</p>
+
+    <hr class="divider" />
+    <p><a href="https://github.com/sillyjoshua/matte/releases/tag/matte-v1.1-silvergate" target="_blank" rel="noopener">View the V1.1 release on GitHub →</a></p>
+  </section>
+
+  <footer class="footer">
+    <p><b>MATTE</b> — Silver Gate · built with Electron · MIT License</p>
+    <p><a href="https://github.com/sillyjoshua/matte" target="_blank" rel="noopener">GitHub</a> · <a href="../updates/">Updates</a> · <a href="../../">Home</a></p>
+  </footer>
+</body>
+</html>
